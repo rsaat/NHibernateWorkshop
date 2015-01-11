@@ -10,7 +10,7 @@ namespace Northwind.Entities
         public virtual byte[] PasswordHash { get; set; }
         public virtual Employee Employee { get; set; }
 
-        private ISet<UserGroup> _userGroups = new HashedSet<UserGroup>();
+        private ISet<UserGroup> _userGroups = new HashSet<UserGroup>();
 
         protected User() {}
 

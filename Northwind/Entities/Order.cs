@@ -14,7 +14,7 @@ namespace Northwind.Entities
         public virtual DateTime? ShippedOn { get; set; }
         public virtual Address DeliveryAddress { get; set; }
 
-        private ISet<OrderItem> _items = new HashedSet<OrderItem>();
+        private ISet<OrderItem> _items = new HashSet<OrderItem>();
 
         protected Order() {}
 

@@ -36,6 +36,8 @@ namespace NHibernateWorkshop
             SessionFactory = new SqlServerFluentSessionFactoryBuilder().BuildSessionFactory();
 #elif HBMSQLSERVER
             SessionFactory = new SqlServerHbmSessionFactoryBuilder().BuildSessionFactory();
+#elif HBMJET
+            SessionFactory = new JetHbmSessionFactoryBuilder().BuildSessionFactory();
 #else
             SessionFactory = new SQLiteHbmSessionFactoryBuilder().BuildSessionFactory();
 #endif

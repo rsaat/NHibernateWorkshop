@@ -28,7 +28,7 @@ namespace Northwind.Entities
             Id = Guid.NewGuid();
             Name = name;
             Category = category;
-            Images = new HashedSet<ImageInfo>();
+            Images = new HashSet<ImageInfo>();
         }
 
         public virtual IEnumerable<ProductSource> Sources
